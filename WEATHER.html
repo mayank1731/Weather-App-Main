@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="WEATHER.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">sky sage</div>
+    <div class="image-container">
+        <img src="https://img.freepik.com/premium-photo/weather-icons-set-yellow-background-weather-forecast-concept_135892-707.jpg" alt="Background Image" id="background-image">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="smartphone">
+        <div class="smartphone-header">
+            <div class="earpiece"></div>
+            <div class="camera"></div>
+        </div>
+        <div class="smartphone-body">
+            <video autoplay muted loop id="background-video">
+                <source src="https://v1.pinimg.com/videos/mc/720p/28/e8/fb/28e8fbcfb99c4fe6d8d358dff19ed235.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <form id="weather-form">
+                <input type="text" id="place-input" placeholder="Enter place name" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-info">
+            </div>
+        </div>
+    </div>
+
+    <div class="forecast-container">
+        <div id="forecast">
+        </div>
+    </div>
+
+    <script src="WEATHER.js"></script>
+</body>
+</html>

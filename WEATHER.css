@@ -1,0 +1,208 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+
+#background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9; 
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+
+body.loaded #background-image {
+    transform: translate(-50%, -50%) scale(1.4);
+}
+
+
+.smartphone {
+    position: fixed;
+    top: 15%;
+    left: 90px; 
+    width: 250px;
+    height: 500px;
+    border: 16px solid #fdfbfb;
+    border-radius: 36px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    z-index: 2; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+#background-video {
+    position: absolute; 
+    top: -30px;
+    left: -20px;
+    width: 120%;
+    height: 120%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.smartphone-header {
+    width: 70%;
+    height: 40px;
+    background: #fcfbfb;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-top: -20px;
+    position: relative; 
+    z-index: 2;
+}
+
+
+.earpiece {
+    position: absolute; 
+    top: 15px; 
+    left: 25px; 
+    width: 80px;
+    height: 10px;
+    background: #333; 
+    border-radius: 5px;
+}
+
+.camera {
+    position: absolute;
+    top: 10px; 
+    right: 30px; 
+    width: 20px;
+    height: 20px;
+    background: #333; 
+    border-radius: 50%;
+}
+
+
+.smartphone-body {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+
+#place-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 30px 0;
+    border: 1px #d7f8f8;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 2;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d7f8f8;
+    color: #010101;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative; 
+    z-index: 2; 
+}
+
+button:hover {
+    background-color: #ede244;
+    color: #040404;
+    font-weight: bolder;
+}
+
+
+#weather-info {
+    color: #fcfbfb;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.forecast-container {
+    position: fixed;
+    top: 65%;
+    left: calc(20px + 400px + 20px); 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    z-index: 2; 
+    font-weight: bolder;
+}
+
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.forecast-day {
+    width: 200px; 
+    height: 150px;
+    background: rgba(286, 286, 286, 0.1);
+    /* background: #94e1dc; */
+    color: #fdfbfb;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 3; 
+    font-weight: bolder;
+}
+
+
+.forecast-day:hover{
+    color: #010101;
+    background: #d7f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+.title {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    font-size: 80px;
+    font-family: matemasie;
+    font-weight: bold;
+    color: #fff; 
+    /* background-color: rgba(286, 286, 286, 0.3);  */
+    z-index: 3; 
+}
+
+
+
